@@ -1,0 +1,18 @@
+p{
+    background-color: black;
+    text-align: right;
+    color: blueviolet;
+    font-weight: 900;
+}
+
+.myBtn{
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.fbtn{
+    text-align: center;
+    color: red;
+}
+
