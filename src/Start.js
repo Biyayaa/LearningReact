@@ -7,8 +7,8 @@ import "./start.css";
 const Start = () => {
   const [student, setstudent] = useState("");
   const [allStudent, setallStudent] = useState(["Abass", "Love", "Timmy"]);
-  let arr1 =["cat", "dog", "sheep"]
-  let arr2 =["Lion", "Tiger", "goat", ...arr1]
+  let arr1 = ["cat", "dog", "sheep"];
+  let arr2 = ["Lion", "Tiger", "goat", ...arr1];
   console.log(arr2);
   const [studentInfo, setStudentInfo] = useState([
     {
@@ -25,10 +25,9 @@ const Start = () => {
   ]);
   const [check, setcheck] = useState(true);
 
-
-  const addStudents =()=>{
-    setallStudent([...allStudent, student])
-  }
+  const addStudents = () => {
+    setallStudent([...allStudent, student]);
+  };
 
   const changeStud = () => {
     setstudent("Temi");
@@ -52,52 +51,49 @@ const Start = () => {
 
   return (
     <>
-      <Button />
-
+      <Button clicked={()=> {alert("Hello")}} myClass="btn btn-danger m-2" name= "click this" />
+      <Button clicked={()=> {alert("Hi")}} myClass="btn btn-dark " name= "click here" />
 
       <div className="shadow-sm py-3 m-5 text-center">
         {check == true ? (
-          allStudent.map((el, i) => (
-            <div>
-              <ul>
-                <li>
-                  {i + 1}.{el}
-                </li>
-              </ul>
-            </div>
-          ))
+          <ul>
+            {allStudent.map((el, i) => (
+              <li key={i}>
+                {i + 1}.{el}
+              </li>
+            ))}
+          </ul>
         ) : (
           <h1>Switch check to true</h1>
         )}
 
-
         <div>
-        <input onChange={(e)=>setstudent(e.target.value)} type="text" />
-                <button onClick={addStudents}>Add Student</button>
+          <input onChange={(e) => setstudent(e.target.value)} type="text" />
+          <button onClick={addStudents}>Add Student</button>
         </div>
 
-        
-          <div className="container">
-            <table className="table table-striped">
-              <thead className="thead-dark">
-                <tr>
-                  <th>Name</th>
-                  <th>Class</th>
-                  <th>Age</th>
+        <div className="container">
+          <table className="table table-striped">
+            <thead className="thead-dark">
+              <tr>
+                <th>S/N</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              {studentInfo.map((el, i) => (
+                <tr key={i}>
+                  <td>{i + 1}</td>
+                  <td>{el.name}</td>
+                  <td>{el.class}</td>
+                  <td>{el.Age}</td>
                 </tr>
-              </thead>
-              <tbody>
-                {studentInfo.map((el, i) => (
-                  <tr key={i}>
-                    <td>{el.name}</td>
-                    <td>{el.class}</td>
-                    <td>{el.Age}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        
+              ))}
+            </tbody>
+          </table>
+        </div>
 
         {/* {
             allStudent.map((el, i)=>(
@@ -132,7 +128,7 @@ const Start = () => {
       <p>How are we doing?</p>
       <img src={require("../src/img/DATA-SQI.jpg")} alt="" />
 
-      <btn className="myBtn">Click me</btn>
+      <button className="myBtn">Click me</button>
     </>
   );
 };

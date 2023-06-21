@@ -4,11 +4,7 @@ import Button from './Button'
 const Something = () => {
   return (
     <div>
-        <div className='d-flex'>
-
-        <Button/> <Button/>
-        </div>
-        <h1 className='text-danger'>This is a reusable component</h1>
+        <h1 className='text-danger'>This is the home page</h1>
     </div>
   )
 }
