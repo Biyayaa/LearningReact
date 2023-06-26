@@ -24,7 +24,10 @@ export const Navbar = () => {
         <li class="nav-item">
           {/* <a class="nav-link" href="/continue">Continue</a> */}
           <Link class="nav-link" to="/continue">Continue</Link>
-
+        </li>
+        <li class="nav-item">
+          {/* <a class="nav-link" href="/continue">Continue</a> */}
+          <Link class="nav-link" to="/userinfo">User Info</Link>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled">Disabled</a>

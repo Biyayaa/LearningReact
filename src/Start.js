@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Button from "./Button";
 import Something from "./Something";
 import "./start.css";
