@@ -9,6 +9,7 @@ import NotFound from "./NotFound";
 import Users from "./Users";
 import MyUsers from "./MyUsers";
 import User1 from "./User1";
+import Data from "./Fetch/Data";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/start" element={<Start />} />
         <Route path="/continue" element={<Continue />} />
         <Route path="/userInfo" element={<Users />} />
+        <Route path="/data" element={<Data />} />
         <Route path="*" element={<NotFound />} />
 
         <Route path="/myUsers">

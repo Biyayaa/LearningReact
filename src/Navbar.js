@@ -40,6 +40,11 @@ export const Navbar = () => {
                   User Info
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/data">
+                  Data
+                </Link>
+              </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
@@ -55,11 +60,6 @@ export const Navbar = () => {
                     <Link className="dropdown-item" to="/myUsers/user1">
                       User1
                     </Link>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
