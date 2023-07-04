@@ -12,13 +12,13 @@ const Start = () => {
   const [studentInfo, setStudentInfo] = useState([
     {
       name: "Abiola",
-      class: "Web",
+      className: "Web",
       Age: 50,
     },
 
     {
       name: "Paul",
-      class: "Ui",
+      className: "Ui",
       Age: 30,
     },
   ]);
@@ -77,7 +77,7 @@ const Start = () => {
               <tr>
                 <th>S/N</th>
                 <th>Name</th>
-                <th>Class</th>
+                <th>className</th>
                 <th>Age</th>
               </tr>
             </thead>
@@ -86,7 +86,7 @@ const Start = () => {
                 <tr key={i}>
                   <td>{i + 1}</td>
                   <td>{el.name}</td>
-                  <td>{el.class}</td>
+                  <td>{el.className}</td>
                   <td>{el.Age}</td>
                 </tr>
               ))}

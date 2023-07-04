@@ -7,8 +7,8 @@ const DispUser = ({allUser}) => {
         {allUser == "" ? (
           <h2 className="text-center">There are no Users</h2>
         ) : (
-          <table class="table table-striped table-bordered w-50 text-center mx-auto">
-            <thead class="thead-dark">
+          <table className="table table-striped table-bordered w-50 text-center mx-auto">
+            <thead className="thead-dark">
               <tr>
                 <th>Name</th>
                 <th>Email</th>
