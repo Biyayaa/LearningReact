@@ -1,5 +1,4 @@
 import "./start.css";
-import Continue from "./Continue";
 import React from "react";
 import Start from "./Start";
 import Something from "./Something";
@@ -10,6 +9,8 @@ import Users from "./Users";
 import MyUsers from "./MyUsers";
 import User1 from "./User1";
 import Data from "./Fetch/Data";
+import Login from "./Login";
+import Signup from "./Signup";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Route path="/home" element={<Navigate to={"/"} />} />
         <Route path="/" element={<Something />} />
         <Route path="/start" element={<Start />} />
-        <Route path="/continue" element={<Continue />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/userInfo" element={<Users />} />
         <Route path="/data" element={<Data />} />
         <Route path="*" element={<NotFound />} />

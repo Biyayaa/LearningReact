@@ -1,6 +1,14 @@
 {
-    "create": [],
-    "signin": {},
-    "create-post": [],
-    "view-post": [] 
+  "create": [
+    {
+      "firstName": "Abiola",
+      "lastName": "Onaleye",
+      "email": "onaleye.ap@gmail.com",
+      "password": "12345",
+      "id": 1
+    }
+  ],
+  "signin": {},
+  "create-post": [],
+  "view-post": []
 }
