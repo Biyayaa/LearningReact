@@ -2,8 +2,16 @@ import { useState } from "react";
 import Button from "./Button";
 import Something from "./Something";
 import "./start.css";
+import { useSelector } from "react-redux";
+
 
 const Start = () => {
+
+  const {myNum} = useSelector((state)=> state.myCount)
+
+
+
+
   const [student, setstudent] = useState("");
   const [allStudent, setallStudent] = useState(["Abass", "Love", "Timmy"]);
   let arr1 = ["cat", "dog", "sheep"];
@@ -50,6 +58,11 @@ const Start = () => {
 
   return (
     <>
+
+    <h2>Number gotten from the store= {myNum}</h2>
+
+
+
       <Button clicked={()=> {alert("Hello")}} myClass="btn btn-danger m-2" name= "click this" />
       <Button clicked={()=> {alert("Hi")}} myClass="btn btn-dark " name= "click here" />
 

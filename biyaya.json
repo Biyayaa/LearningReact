@@ -3,9 +3,16 @@
     {
       "firstName": "Abiola",
       "lastName": "Onaleye",
-      "email": "onaleye.ap@gmail.com",
+      "email": "onaleyeabiola@gmail.com",
       "password": "12345",
       "id": 1
+    },
+    {
+      "firstName": "me",
+      "lastName": "me",
+      "email": "me@gmail.com",
+      "password": "1234",
+      "id": 2
     }
   ],
   "signin": {},
